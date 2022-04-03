@@ -1,0 +1,703 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+html {
+	scroll-behavior: smooth;
+}
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+	overflow-x:hidden;
+	/* background: black; */
+	background-color: #9a90cf;
+  position: relative;
+	/* color: white; */
+	color: black;
+	font-family: 'Carme', sans-serif, Helvetica, sans-serif;
+
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+	font-family: "Playfair Display", "Didot", "Times New Roman", Times, serif;
+}
+
+
+.active{
+	background-color: #e5d5ff;
+    text-transform: uppercase;
+	text-align: center;
+	/* border: dashed #3c1d6e; */
+}
+
+.active a{
+	text-decoration: none;
+	color: #3c1d6e !important;
+}
+
+a.skip{
+	background: white;
+	padding: 6px;
+	-webkit-transition: top 1s ease-out;
+	transition: left 1s ease-out;
+	z-index: 1;
+	/* Requirement 3 code here*/
+	position:absolute; 
+	left: -500px; 
+	font-size: 10px;
+	/* CHECK */
+  }
+  a.skip:focus{
+    position:absolute; 
+    /* visibility: visible; */
+    left: 0px;
+    margin-top: 20px;
+  }
+
+/*Style the images*/
+img{
+    width: 100%;
+	border: 0.5px solid rgb(255, 255, 255);
+	padding: 1px;
+	border-radius: 0.5px;
+	/* margin-top: 2%; */
+    /* margin-left: 40%; */
+    /* align-items: center; */
+}
+
+/* img:nth-child(odd):hover{
+	opacity: 0.5;
+} */
+
+img:nth-child(even){
+	border-color: rgb(140, 165, 236);
+	border: dashed rgb(140, 165, 236);
+	padding: 0.1%;
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+	font-weight: bold;
+}
+
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 10px;
+}
+p{
+	font-family: 'Carme', sans-serif, Helvetica, sans-serif;
+	font-size: 30px; 
+	line-height: 50px;
+}
+/*Add borders around the main components and some
+space too*/
+header, nav, main, h1, footer{
+	/* border: 2px solid grey; */
+	margin: 10px 0;
+}
+
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav{
+	display: flexbox;
+}
+nav li{
+	/* background-color: #caaef8; */
+	background-color: #3c1d6e;
+	color: white;
+	padding:10px;
+	min-width:10.5%;
+	/* border:1px solid black; */
+	display: inline-block;
+	text-align: center;
+	flex-wrap: wrap;
+	font-size: 8px;
+	height: 5%;
+}
+
+nav ul li a{
+	color: #e5d5ff !important;
+	text-decoration: none;
+}
+
+/* image formatting */
+
+/* index.html */
+#indexcolor{
+	background-color:rgb(39 40 49);
+}
+#title{
+	text-align: center;
+	color: white;
+}
+/* .landingpagebg{
+	background-image: url("../images/bts_blkwhite.jpeg");
+	animation: fadebackground 15s infinite;
+	position: absolute;
+	height: 9%;
+	width: 98%;
+	background-position: center;
+	background-repeat: repeat;
+	background-size:  contain;
+	display: block;
+} */
+.landingpagebg{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+@keyframes fadebackground {
+	from {background-image: url("../images/bts_blkwhite.jpeg");}
+	to {background-image: url("../images/bts_butter.jpeg");}
+  }
+.container{
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	/* row-gap: 170px; */
+	row-gap: 315px;
+	column-gap: 05px;
+	margin-top: -55%;
+}
+
+section{
+	position: relative;
+}
+#landing1 {
+	grid-column: 1/3;
+	grid-row: 1/2
+}
+#landing2 {
+	grid-column: 1/3;
+	grid-row: 1/2
+}
+#landing2 img{
+	animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-direction: alternate;
+	/* grid-column: 1/3; */
+	grid-row: 1/2
+}
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+/* #landing{
+	width: 100%;
+	height: auto; 
+	grid-column: 1/3;
+	grid-row: 1/2;
+} */
+/* set columns */
+.landingText {
+	/* font-size: 18px; */
+	font-size: 10px;
+	/* grid-column: 2/3; */
+	line-height: 25px;
+	display: flex;
+	text-align: center;
+}
+#landingimage2, #landingimage3, #landingimage4{
+	grid-column: 1/3;
+}
+
+#para1, #para2, #para3{
+	grid-column: 1/3;
+	/* box-shadow: inset 0 -25px 50px -35px rgba(0, 0, 0, 1); */
+}
+#para1{
+	background: #d1a979;
+    padding: 1px;
+	margin-bottom: -534px
+}
+#para2{
+	background: #f6dbd1;
+    padding: 1px;
+	margin-bottom: -860px
+}
+#para3{
+	background: #a4c0e7;
+    padding: 1px;
+	margin-bottom: -700px
+}
+.text{
+	align-self: center;
+    justify-content: center;
+    max-height: 41vh;
+    overflow: scroll;
+	/* margin-top: -40px; */
+}
+/* set rows */
+
+#para1,#landingimage2{
+	grid-row: 2/3;
+}
+#para2,#landingimage3{
+	grid-row: 3/4;
+}
+#para3, #landingimage4{
+	grid-row: 4/5;
+}
+#para3.landingText.text{
+	margin-top: -20px;
+}
+.button{
+	font-size: 10px;
+    background-color: #e5d5ff;
+    text-decoration: wavy;
+    border: 1px dotted black;
+    padding: 3px;
+	color: #40097e;
+	font-family: 'Carme', sans-serif, Helvetica, sans-serif;
+}
+#indexftr{
+	color: #fff;
+}
+/* vocal line */
+#vocalcolor{
+	background-color: #a9c1b2;
+}
+#vocalcover{
+  background-image: url("../images/vocallinedynamite.jpeg");
+  background-color:  #a9c1b2;
+
+  /* Set a specific height */
+  min-height: 540px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  /* background-size:  contain; */
+
+  /* without parallax */
+  background-size:  contain;
+}
+#vocalintro{
+	text-align: center;
+	line-height: 38px;
+	font-size: 19px;
+	margin-bottom: 30px;
+	padding-top: 2%;
+	padding-right: 2%;
+	padding-left: 2%;
+	background-color:  #a9c1b2;
+}
+
+#vocal{
+	width: 30%;
+	height: auto;
+	margin-left: 20%;
+}
+#young {
+	width: 23%;
+	height: auto;
+}
+#runimg{
+	width: 53%;
+	height: auto;
+	margin-left: 20%;
+}
+#vocaltext{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 15px;
+	column-gap: 15px;
+	padding-top: 2%;
+}
+#vocaltext p{
+	/* margin-left: 20%;
+	margin-right: 27%; */
+	text-align: center;
+	line-height: 38px;
+	font-size: 19px;
+	grid-column: 1/3;
+
+}
+#jin, #jimin, #tae, #jk, #rm, #suga, #jh{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.name{
+	grid-column: 1/4;
+	grid-row: 1/2;
+}
+#singers, #rappers{
+	margin-top: 7%;
+}
+#jin1 , #jm1, #v1, #jk1, #rm1, #sg1, #jh1{
+	height: auto;
+	grid-column: 1/4;
+	grid-row: 2/3;
+}
+#jin2, #jm2, #v2, #jk2, #rm2, #jh2{
+	height: auto;
+	grid-column: 1/3;
+	grid-row: 4/5;
+}
+#jm2, #jk2, #sg2{
+	grid-column: 2/4;
+}
+
+/* Rap Line */
+#rapcolor{
+	background-color: black;
+	color: white;
+}
+#rapcover{
+	background-image: url("../images/rap_line.jpeg");
+	background-color:  black;
+  
+	/* Set a specific height */
+	min-height: 540px;
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size:  contain;
+}
+#rapintro{
+	text-align: center;
+	line-height: 38px;
+	font-size: 19px;
+	margin-bottom: 30px;
+	/* padding-top: 2%; */
+	padding-right: 2%;
+	padding-left: 2%;
+	background-color:  black;
+}
+#raptext{
+	display: flex;
+	flex-wrap: wrap;
+}
+.fleximgs{
+	width: 50%;
+}
+#raptext p{
+	/* margin-left: 20%;
+	margin-right: 27%; */
+	text-align: center;
+	line-height: 38px;
+	font-size: 19px;
+	grid-column: 1/3;
+
+}
+#rapimg{
+	width: 30%;
+	height: auto;
+	margin-left: 33%;
+}
+#young2{
+	margin-left: 8%;
+	width: 40%;
+	height: auto;
+}
+#runrap{
+	margin-left: 2%;
+	width: 31.5%;
+	height: auto;
+}
+/* #blackswan, #home, #ftmr, #pp, #bfly{
+	width: 70%;
+	height: auto;
+} */
+#jin, #tae, #rm, #jh{
+	margin-top: 1%;
+	float: left;
+}
+.jintext{
+	line-height: 30px;
+	font-size: 12px;
+	/* border: 3px solid rgb(255, 255, 255); */
+	grid-column: 2/4;
+	grid-row: 3/4;
+	padding: 3px;
+	/* margin-top: -160px;
+	background-color: white;
+	opacity: 86%; */
+}
+.jintext2{
+	line-height: 30px;
+	font-size: 12px;
+	/* border: 3px solid rgb(255, 255, 255); */
+	grid-column: 2/4;
+	grid-row: 5/6;
+	padding: 3px;
+}
+.jmtext{
+	line-height: 30px;
+	font-size: 12px;
+	/* border: 3px solid rgb(255, 255, 255); */
+	grid-column: 1/3;
+	grid-row: 3/4;
+	padding: 3px;
+}
+.jmtext2{
+	line-height: 30px;
+	font-size: 12px;
+	/* border: 3px solid rgb(255, 255, 255); */
+	grid-column: 1/3;
+	grid-row: 5/6;
+	padding: 3px;
+}
+#jinformat{
+	margin-top: -80px;
+    background: #d0d0d0;
+    opacity: 91%;
+}
+#jinformat2{
+	margin-top: -40px;
+    background: #afafcf;
+    opacity: 91%;
+}
+#jmformat{
+	margin-top: -80px;
+    background: #c9a399;
+    opacity: 91%;
+}
+#jmformat2{
+	margin-top: -40px;
+    background: #f9efcc;
+    opacity: 91%;
+}
+#vformat{
+	margin-top: -80px;
+    background: #d1c4ab;
+    opacity: 91%;
+}
+#vformat2{
+	margin-top: -40px;
+    background: #e5c0b8;
+    opacity: 91%;
+}
+#jkformat{
+	margin-top: -80px;
+    background: #6591b5;
+    opacity: 91%;
+}
+#jkformat2{
+	margin-top: -40px;
+    background: #aaadb6;
+    opacity: 91%;
+}
+#rmformat{
+	margin-top: -130px;
+    background: #7e5050;
+    opacity: 91%
+}
+#rmformat2{
+	margin-top: -40px;
+    background: #787d6c;
+    opacity: 91%;
+}
+#sugaformat{
+	margin-top: -80px;
+    background: #4e6082;
+    opacity: 91%;
+}
+#sugaformat2{
+	margin-top: -60px;
+    background: #ca8f8c;
+    opacity: 91%;
+}
+#jhopeformat{
+	margin-top: -80px;
+    background: #3b9f88;
+    opacity: 91%
+}
+#jhopeformat2{
+	margin-top: -45px;
+    background: #f45d96;
+    opacity: 91%;
+}
+#jimin, #jk, #suga{
+	margin-top: 5%;
+	float: right;
+}
+.name{
+	margin-bottom: 40px;
+	text-align: center;
+}
+#nameJH{
+	margin-bottom: 108px;
+	text-align: center;
+}
+
+/* Songs list  */
+#songscolor{
+	/* background-color: #b9c6e9; */
+	background-color: #262330;
+	/* color: #462f2f; */
+	color: #c59090;
+}
+#listtext p{
+	font-size: 19px;
+	line-height: 30px;
+	text-align: center;
+}
+#songslist{
+	/* align-items: center;
+	margin-left: 30%; */
+	margin-top: 15%; 
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	column-gap: 10px;
+	row-gap: 60px;
+	color: #cac0d9;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#blackswan{
+	grid-column: 1/7;
+	grid-row: 1/3;
+	position: relative;
+}
+#home{
+	grid-column: 2/7;
+	grid-row: 3/6;
+	position: relative;
+}
+
+#ftmr{
+	grid-column: 1/7;
+	grid-row: 6/9;
+	position: relative;
+}
+#pp{
+	grid-column: 2/7;
+	grid-row: 9/13;
+	position: relative;
+}
+#bfly{
+	grid-column: 1/6;
+	grid-row: 13/17;
+	position: relative;
+}
+#songslist p{
+	text-align: center;
+	margin-right: 30%;
+}
+.songtxt{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 12px;
+	visibility: hidden;
+}
+.songcontainer:hover .songtxt{
+	visibility: visible;
+	opacity: 1;
+}
+
+.songcontainer:hover img{
+	opacity: 0.2;
+}
+footer p{
+	font-family: "Trebuchet MS";
+	font-size: 13px !important; 
+	margin-top: 37% !important;
+}
+
+/*Added this so the links stay the same color*/
+a:visited{color:#40097e}
+
+/* Contact Page */
+.contactpageheading{
+	text-align: center;
+	padding: 5%;
+}
+
+.contacttext{
+	color: #2e2c2c;
+	padding: 2%;
+}
+
+#smallertext{
+	font-size: 18px;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+	/*Turn off scroll*/
+	html{
+	  scroll-behavior: auto; /* Removes scroll animation */
+	}
+  
+	/*Turn off transition*/
+	a.skip {
+	  -webkit-transition: initial; /* sets to default setting */
+	  transition: initial; /* sets to default setting */
+	}
+  
+	/*Turn off parallax*/
+	#vocalcover, #rapcover{
+	  background-attachment: initial;
+	}
+
+	.landingpagebg{
+		animation: none !important;
+	}
+  }
+
+  @media screen and (min-width: 650px){
+	.container{
+		margin-top: -10%;
+		row-gap:170px;
+	}
+	#para1{
+		margin-bottom: -80%;
+	}
+	#para2{
+		margin-bottom: -155%;
+	}
+	#para3{
+		margin-bottom: -130%;
+	}
+	.landingText {
+		padding-right: 10px;
+		padding-left: 10px;
+		font-size: 16px;
+	}
+	#btndiv{
+		margin-top: 18%;
+	}
+	footer p{
+		margin-top: 0% !important;
+	}
+	.name{
+		grid-column: 1/5;
+	}
+	#jin, #jimin, #tae, #jk, #rm, #suga, #jh{
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 2fr;
+	}
+	#jin1 , #jm2, #v1, #jk2, #rm1, #sg2, #jh1{
+		grid-column: 1/3;
+	}
+	#jin2, #jm1, #v2, #jk1, #rm2, #sg1, #jh2{
+		grid-column: 3/5;
+	}
+	.jintext, .jmtext2{
+		grid-column: 3/5;
+	}
+	.jintext2, .jmtext{
+		grid-column: 1/3;
+	}
+	#jinformat, #jinformat2, #jmformat, #jmformat2, #vformat, #vformat2, #jkformat, #jkformat2{
+		margin-top: -85%;
+	}
+  }
