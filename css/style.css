@@ -792,7 +792,9 @@ a:visited{color:#40097e}
 		font-size: 20px;
 		padding: 20px;
 	}
-	
+	ul{
+		width: 0% !important;
+	}
 
 	h1{
 		font-size: 4em;
