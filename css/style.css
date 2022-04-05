@@ -793,7 +793,7 @@ a:visited{color:#40097e}
 		padding: 20px;
 	}
 	ul{
-		width: 0% !important;
+		width: auto;
 	}
 
 	h1{
