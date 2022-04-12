@@ -851,7 +851,7 @@ a:visited{color:#40097e}
 	transform: rotateY(180deg);
   }
   .flip-card-back p{
-	font-size: 18px;
+	font-size: 8px;
   }
 
   nav ul{
@@ -896,6 +896,10 @@ a:visited{color:#40097e}
   }
 
   @media screen and (min-width: 650px){
+
+	#btndiv{
+		margin-top: 30%;
+	}
 	.container{
 		margin-top: -10%;
 		row-gap:170px;
@@ -916,9 +920,6 @@ a:visited{color:#40097e}
 		padding-right: 10px;
 		padding-left: 10px;
 		font-size: 16px;
-	}
-	#btndiv{
-		margin-top: 18%;
 	}
 	footer p{
 		margin-top: 0% !important;
@@ -983,6 +984,9 @@ a:visited{color:#40097e}
 	.flip-card{
 		margin-left: 27%;
 	}
+	.flip-card-back p{
+		font-size: 10px;
+	  }
 	#songlist{
 	display: flex;
     flex-wrap: wrap;
@@ -999,6 +1003,10 @@ a:visited{color:#40097e}
   }
 
   @media screen and (min-width: 1200px){
+
+	#btndiv{
+		margin-top: 2%;
+	}
 
 	#vocalcover{
 		min-height: 734px;
@@ -1087,6 +1095,9 @@ a:visited{color:#40097e}
 		height: 366px;
 		margin-left: 30%;
 	}
+	.flip-card-back p{
+		font-size: 18px;
+	  }
 
 	#listtext p{
 		font-size: 28px;
