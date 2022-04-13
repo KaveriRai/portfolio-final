@@ -772,12 +772,12 @@ section{
 	font-size: 12px;
 	visibility: hidden;
 }
-.songcontainer:hover .songtxt{
+.songcontainer:hover .songtxt, .songcontainer:focus .songtxt, .songcontainer:active .songtxt{
 	visibility: visible;
 	opacity: 1;
 }
 
-.songcontainer:hover img{
+.songcontainer:hover img, .songcontainer:focus img, .songcontainer:active img{
 	opacity: 0.1;
 }
 footer p{
